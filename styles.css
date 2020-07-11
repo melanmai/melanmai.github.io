@@ -952,12 +952,36 @@ video {
   display: block;
 }
 
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
 .hidden {
   display: none;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .font-sans {
   font-family: IBM Plex Sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-headline {
+  font-family: IBM Plex Serif;
 }
 
 .font-medium {
@@ -968,6 +992,14 @@ video {
   font-weight: 800;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -976,8 +1008,16 @@ video {
   font-size: 1rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
 }
 
 .text-4xl {
@@ -997,6 +1037,10 @@ video {
   margin-right: auto;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -1011,6 +1055,10 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .max-w-md {
@@ -1158,10 +1206,10 @@ video {
   color: rgba(229, 231, 235, var(--text-opacity));
 }
 
-.text-gray-500 {
+.text-gray-700 {
   --text-opacity: 1;
-  color: #6b7280;
-  color: rgba(107, 114, 128, var(--text-opacity));
+  color: #374151;
+  color: rgba(55, 65, 81, var(--text-opacity));
 }
 
 .text-gray-900 {
@@ -1183,6 +1231,10 @@ video {
 
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -1261,6 +1313,10 @@ video {
     flex-shrink: 0;
   }
 
+  .sm\:h-10 {
+    height: 2.5rem;
+  }
+
   .sm\:h-full {
     height: 100%;
   }
@@ -1327,6 +1383,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
   }
@@ -1349,6 +1409,23 @@ video {
 
   .md\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:inset-y-0 {
+    top: 0;
+    bottom: 0;
+  }
+
+  .md\:left-0 {
+    left: 0;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:-translate-y-1\/2 {
